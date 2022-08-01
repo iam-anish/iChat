@@ -1,0 +1,90 @@
+
+body{
+    background-image: linear-gradient(rgb(102, 160, 255),rgb(206, 178, 206));
+    height: 100vh; 
+}
+nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    padding-right: 5px;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+}
+#chatname{
+    display: flex;
+    margin: auto;
+}
+.container{
+    background-image: url(/wal2.jpeg);
+    opacity: 0.8;
+    max-width: 935px;
+    margin: auto;
+    height: 70vh;
+    padding: 5px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.message{
+    background-color: rgb(251, 191, 251);
+    width: 40%;
+    margin: 10px 17px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.right{
+    float: right;
+    clear: both;
+}
+
+.left{
+    float: left;
+    clear: both;
+}
+
+#send-container{
+   display: block;
+   margin: auto;
+   text-align: center;
+   max-width: 965px;
+   width: 100%;
+}
+
+#messageInp{
+    width: 90%;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 25px;
+ }
+ 
+.btn{
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 30px;
+    max-width: 70px;
+    width: 100%;
+} 
+
+@media (max-width: 840px) {
+  #messageInp{
+    width: 80%;
+  }
+  .message{
+    width: 60%;      
+  }
+}
+@media (max-width: 430px) {
+    #messageInp{
+      width: 60%;
+    }
+  }
+
